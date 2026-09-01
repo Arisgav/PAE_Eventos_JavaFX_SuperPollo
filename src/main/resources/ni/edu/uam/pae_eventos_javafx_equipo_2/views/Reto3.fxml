@@ -6,9 +6,31 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<BorderPane style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.Reto3Controller">
+    <top>
+        <VBox>
+            <MenuBar>
+                <menus>
+                    <Menu text="Catálogo" />
+                    <Menu text="Ventas" />
+                    <Menu text="Ayuda" />
+                </menus>
+            </MenuBar>
+            <ToolBar>
+                <items>
+                    <Button onAction="#accionNuevo" text="Nuevo" />
+                    <Button onAction="#accionGuardar" text="Guardar" />
+                    <Button onAction="#accionBuscar" text="Buscar" />
+                </items>
+            </ToolBar>
+        </VBox>
+    </top>
+    <center>
+        <TableView fx:id="tablaArtesanias" style="-fx-padding: 10;">
+            <columns>
+                <TableColumn fx:id="colImagen" prefWidth="100.0" text="Imagen" />
+                <TableColumn fx:id="colNombre" prefWidth="300.0" text="Producto" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
