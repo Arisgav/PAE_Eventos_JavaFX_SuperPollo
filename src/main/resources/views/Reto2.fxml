@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<VBox spacing="15.0" style="-fx-padding: 30; -fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.Reto2Controller">
+<VBox spacing="15.0" style="-fx-padding: 30; -fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.pae_eventos_javafx_equipo_2.controllers.Reto2Controller">
     <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Reto 2: Recepción de Café" />
     <TableView fx:id="tablaLotes" onMouseClicked="#mostrarDetalles">
         <columns>

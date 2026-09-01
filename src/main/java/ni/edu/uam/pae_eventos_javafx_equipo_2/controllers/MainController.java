@@ -1,13 +1,13 @@
 package ni.edu.uam.pae_eventos_javafx_equipo_2.controllers;
 
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
 import java.io.IOException;
 
 public class MainController {
+
     @FXML private BorderPane mainLayout;
 
     @FXML void cargarReto1() { cargarVista("/views/Reto1.fxml"); }
@@ -16,7 +16,7 @@ public class MainController {
 
     private void cargarVista(String fxml) {
         try {
-            VBox vista = FXMLLoader.load(getClass().getResource(fxml));
+            Node vista = FXMLLoader.load(getClass().getResource(fxml));
             mainLayout.setCenter(vista);
         } catch (IOException e) {
             e.printStackTrace();

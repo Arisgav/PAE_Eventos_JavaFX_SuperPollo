@@ -7,18 +7,12 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Carga la estructura base (el BorderPane con el menú lateral)
         Parent root = FXMLLoader.load(getClass().getResource("/views/Main.fxml"));
-
-        primaryStage.setTitle("Ejercicios en Pareja - JavaFX");
+        primaryStage.setTitle("Retos UAM - Equipo 2");
         primaryStage.setScene(new Scene(root, 900, 600));
         primaryStage.show();
     }
-
-    public static void main(String[] args) {
-        launch(args);
-    }
+    public static void main(String[] args) { launch(args); }
 }
